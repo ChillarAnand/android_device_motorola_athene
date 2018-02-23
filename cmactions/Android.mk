@@ -5,7 +5,7 @@ LOCAL_MODULE_TAGS := optional
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
 
-LOCAL_PACKAGE_NAME := CMActions
+# LOCAL_PACKAGE_NAME := CMActions
 LOCAL_CERTIFICATE := platform
 LOCAL_PRIVILEGED_MODULE := true
 
@@ -34,7 +34,7 @@ ifneq ($(INCREMENTAL_BUILDS),)
     LOCAL_JACK_ENABLED := incremental
 endif
 
-include frameworks/base/packages/SettingsLib/common.mk
+# include frameworks/base/packages/SettingsLib/common.mk
 
 include $(BUILD_PACKAGE)
 
